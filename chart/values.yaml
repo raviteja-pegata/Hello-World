@@ -3,3 +3,6 @@ image:
   tag: b55d573b0e3ae12a0c268b86272c9d2324342586
 service:
   port: 8081
+serviceAccount:
+  create: true
+  name: ""
