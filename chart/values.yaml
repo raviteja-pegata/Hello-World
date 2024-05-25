@@ -1,6 +1,6 @@
 image:
   repository: rapega/go-app
-  tag: e0f60acfb2b2feab6b109ac2abcfbf2968e90e3d
+  tag: 97fe8bfaa9a83061fcf1d911c078dcfe96fba34f
 service:
   port: 8081
   name: go-app
