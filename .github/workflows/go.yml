@@ -48,5 +48,4 @@ jobs:
     
     - name: commit the changes made
       uses: actions-x/commit@v6
-      email: ${{ github.actor }}@localhost
       
