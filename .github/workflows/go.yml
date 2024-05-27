@@ -56,9 +56,11 @@ jobs:
         chart_dir="chart"
         new_image_tag=${{github.sha}}
         # Update the values.yaml file with the new image tag
-        # sed -i "s/^  tag: .*/  tag: $new_image_tag/" "$chart_dir/values.yaml"
+        sed -i "s/^  tag: .*/  tag: $new_image_tag/" "$chart_dir/values.yaml"
         # Update the values.yaml file with the correct environment if necessary
-        sed -i "s/^  environment: .*/  environment: $ENVIRONMENT/" "$chart_dir/values.yaml"
+        #sed -i "s/^  environment: .*/  environment: $ENVIRONMENT/" "$chart_dir/values.yaml"
+      with:
+        branch: ${{ github.ref}}
     
     - name: commit the changes made
       uses: actions-x/commit@v6
