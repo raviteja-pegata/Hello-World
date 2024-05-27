@@ -49,6 +49,7 @@ jobs:
           echo "ENVIRONMENT=dev" >> $GITHUB_ENV
         else
           echo "ENVIRONMENT=main" >> $GITHUB_ENV
+        fi
 
     - name: Update Image Tag Values
       run: |
